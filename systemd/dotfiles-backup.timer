@@ -1,0 +1,10 @@
+[Unit]
+Description=Run dotfiles backup weekly
+
+[Timer]
+# Run every Sunday at 2 AM
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

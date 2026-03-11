@@ -1,0 +1,22 @@
+# Backup exclusions
+.bash_history
+.zsh_history
+*.tmp
+*.log
+.cache/
+
+# Private keys (never commit these)
+.ssh/id_rsa
+.ssh/id_ed25519
+.ssh/id_*
+!*.pub
+
+# Local secrets
+.bashrc.local
+.zshrc.local
+.env.local
+
+# Temporary files
+*~
+.*.swp
+.DS_Store

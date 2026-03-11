@@ -1,0 +1,15 @@
+[Unit]
+Description=Weekly Dotfiles Backup
+
+[Service]
+Type=oneshot
+ExecStart=/home/ashwin/dotfiles/backup.sh
+WorkingDirectory=/home/ashwin/dotfiles
+User=ashwin
+Environment=HOME=/home/ashwin
+
+# Auto-commit and push
+ExecStartPost=/bin/sh -c 'cd /home/ashwin/dotfiles && git add -A && git diff --cached --quiet || (git commit -m "Weekly backup: $(date +%%Y-%%m-%%d)" && git push)'
+
+[Install]
+WantedBy=multi-user.target
