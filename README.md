@@ -24,6 +24,12 @@ Personal dotfiles and configuration for my development environment.
 - **Pop!_OS Shell** (`.config/pop-shell/`) - Tiling window manager for GNOME
 - **GNOME Extensions** (`gnome-extensions.txt`) - List of installed GNOME extensions
 
+### System Tools & Scripts
+- **scripts/system_tools/** - Hardware-specific setup scripts
+  - Acer Predator fan control installation
+  - System monitoring tools setup
+  - Automated backup configuration
+
 ## Prerequisites
 
 - Fedora Linux (or similar RPM-based distribution)
@@ -207,7 +213,13 @@ git push origin main
 ### Acer Predator PT515-51
 - Fan control via Fn+F keyboard shortcut
 - Temperature monitoring via predator-fan extension
-- See [system_tools/README.md](system_tools/README.md) for fan control setup
+- See [scripts/system_tools/README.md](scripts/system_tools/README.md) for fan control setup
+
+**To set up fan control on a fresh install:**
+```bash
+cd ~/dotfiles/scripts/system_tools
+./install-all.sh
+```
 
 ## License
 
