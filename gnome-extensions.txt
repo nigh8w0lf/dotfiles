@@ -1,0 +1,11 @@
+runcat@kolesnikov.se
+blur-my-shell@aunetx
+caffeine@patapon.info
+predator-fan@ashwin
+apps-menu@gnome-shell-extensions.gcampax.github.com
+background-logo@fedorahosted.org
+launch-new-instance@gnome-shell-extensions.gcampax.github.com
+places-menu@gnome-shell-extensions.gcampax.github.com
+window-list@gnome-shell-extensions.gcampax.github.com
+pop-shell@system76.com
+ddterm@amezin.github.com
